@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h3>eGram Automator</h3>
+
+  <div id="notEgram" class="warn hidden">
+    Open an <b>egramswaraj.gov.in</b> page first.
+  </div>
+
+  <div id="mainPanel" class="hidden">
+    <div class="toggle-row">
+      <span>Extension:</span>
+      <button id="toggleBtn" class="toggle off">OFF</button>
+    </div>
+
+    <div id="activePanel" class="hidden">
+      <hr>
+      <label>Profile:
+        <select id="profileSelect"></select>
+      </label>
+      <button id="fillBtn" class="action">Fill This Voucher</button>
+
+      <hr>
+      <h4>Batch (CSV)</h4>
+      <input type="file" id="csvFile" accept=".csv">
+      <button id="startBatch" class="action" disabled>Start Batch</button>
+      <div id="batchStatus"></div>
+    </div>
+
+    <hr>
+    <button id="openOptions">Manage Profiles</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

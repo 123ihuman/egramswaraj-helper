@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "eGram Automator",
+  "version": "3.0",
+  "description": "Toggle-on form filler for eGramSwaraj. Silent by default.",
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://egramswaraj.gov.in/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "eGram Automator"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  }
+}
